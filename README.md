@@ -1,6 +1,24 @@
 # biomack_infra
 biomack Infra repository
 
+
+
+## ДЗ-4 (cloud-testapp)
+
+### Данные для доступа к тестовому приложению
+
+
+```
+testapp_IP = 51.250.82.44
+testapp_port = 9292
+```
+
+### Команда, используемая для создания инстанса
+
+```
+./startup.sh
+```
+
 ## ДЗ-3 (cloud-bastion)
 
 Данные для подключения:
