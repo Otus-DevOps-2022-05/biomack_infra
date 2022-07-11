@@ -1,1 +1,4 @@
+key.*
 ubuntu
+variables.json
+packer/key.json
