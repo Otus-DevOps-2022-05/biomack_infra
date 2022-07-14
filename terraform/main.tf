@@ -12,7 +12,7 @@ data "yandex_compute_image" "reddit" {
 
 resource "yandex_compute_instance" "app" {
   name  = "reddit-app-${count.index}"
-  count = var.instance_count
+
 
   resources {
     cores  = 2
