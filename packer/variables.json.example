@@ -1,8 +1,7 @@
-
 {
-  "folder_id": "sometext",
-  "source_image_family": "ubuntu-1604-lts",
-  "service_account_key_file": "key.json",
-  "disk_name": "packer_image",
-  "disk_size_gb": "11"
+  "folder_id": "llllleeeerrrrooooyyyyyyy",
+  "image": "ubuntu-1604-lts",
+  "key_file": "key.json",
+  "reddit_file": "reddit.service",
+  "ssh_user": "ubuntu"
 }
