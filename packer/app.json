@@ -1,22 +1,21 @@
 {
-    "builders": [
+   "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "{{ user `service_account_key_file` }}",
-            "folder_id": "{{ user `folder_id` }}",
-            "source_image_family": "{{ user `source_image_family` }}",
-            "image_name": "reddit-app-base-{{timestamp}}",
+            "service_account_key_file": "key.json",
+            "folder_id": "b1gpg7hg4sqksh20llpv",
+            "source_image_family": "ubuntu-1604-lts",
+            "image_name": "reddit-app-{{timestamp}}",
             "image_family": "reddit-app-base",
+            "use_ipv4_nat":        true,
             "ssh_username": "ubuntu",
-            "subnet_id": "{{ user `subnet_id` }}",
-            "use_ipv4_nat": true,
             "platform_id": "standard-v1"
         }
     ],
     "provisioners": [
         {
             "type": "ansible",
-            "playbook_file": "ansible/packer_app.yml"
+            "playbook_file": "./ansible/playbooks/packer_app.yml"
         }
     ]
 }
